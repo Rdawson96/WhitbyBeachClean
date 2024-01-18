@@ -5,16 +5,21 @@
     margin: 0;
 }
 
-header {
-    background-color:aquamarine;
-    width:100%;
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*Generic project styles */
+    color: black
+    font-family: 'Barlow Condsend', sans-serif;
 }
+
 
 h1 {
     font-family: 'Bebas Neue', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #252525;
+    color:black
 }
 
 #navigation {
