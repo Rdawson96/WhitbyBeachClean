@@ -1,4 +1,3 @@
-
 /* Import from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500&family=Bebas+Neue&display=swap');
 
@@ -9,8 +8,12 @@
     margin: 0;
 }
 
+/* Style default body */
 body {
     font-family: 'Barlow Condensed', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -22,7 +25,7 @@ header {
     font-family: 'Bebas Neue', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     padding: 0 1rem;
     font-size: 300%;
 }
@@ -34,7 +37,7 @@ header {
 
 #navigation>li {
     margin-bottom: 1rem;
-    display:inline-block;
+    display: inline-block;
 }
 
 .active {
@@ -44,6 +47,7 @@ header {
 main {
     background-color: #30b1ce;
     width: 100%;
+    flex: 1 0 auto;
 }
 
 footer {
