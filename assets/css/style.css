@@ -11,43 +11,50 @@
 /* Style default body */
 body {
     font-family: 'Barlow Condensed', sans-serif;
+    height:100%;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     /* project styles */
     flex-direction: column;
     color: #FFFFFF
 }
 
+/* Header styles */
 header {
     background-color: #046997;
     width: 100%;
-    padding: 0 1em;
-    height:10%
+    display:flex;
+    position: fixed;
+    z-index: 999;
+    justify-content: space-between;
+    box-shadow: 0 2px 2px #3a3a3a;
+    align-items: baseline;
 }
-
+/* removed underlines from links */
 header a {
     text-decoration: none;
     color: inherit;
 }
-
+/* logo style */
 #logo {
     font-family: 'Bebas Neue', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #FFFFFF;
-    padding-right: 1rem;
     font-size: 250%;
 }
 
-
+/* navigation styling */
 #navigation {
     list-style-type: none;
     font-size: 120%;
-    
 }
 
 #navigation>li {
     border-bottom: 1em;
+    padding: 0 10px;
+    font-size: 110%;
 }
 
 .active {
@@ -55,23 +62,55 @@ header a {
 
 }
 
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute;
+    background-color: #046997;
+    width: 100%;
+    left:0;
+    display: none;
+    top: 100%;
+
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+/* Main */
+
 main {
-    background-color: #30b1ce;
+    background-color: #FFFFFF;;
     width: 100%;
     flex: 1 0 auto;
 }
 
+
+/* Footer */
 footer {
     background-color: #046997;
     width: 100%;
 }
 
 #social-networks {
-    text-align: center;
-    padding: 20px 0;
+    text-align: right;
+    padding: 5px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     list-style-type: none;
+}
+
+#social-networks a {
+    padding: 0 5px;
 }
 
 #social-networks i {
@@ -79,3 +118,25 @@ footer {
     padding: 5%;
     color:#FFFFFF;
 }
+
+@media screen and(min-width: 768px) {
+/* Header */
+nav {
+    display: block;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
+    left:0;
+}
+
+
+#navigation {
+    display: flex;
+}
+
+#navigation>li {
+    padding-left: 1em;
+}
+
+}
+    
