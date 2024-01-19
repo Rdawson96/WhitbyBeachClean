@@ -13,7 +13,9 @@ body {
     font-family: 'Barlow Condensed', sans-serif;
     min-height: 100vh;
     display: flex;
+    /* project styles */
     flex-direction: column;
+    color: #FFFFFF
 }
 
 header {
@@ -23,13 +25,14 @@ header {
 
 header a {
     text-decoration: none;
+    color: inherit;
 }
 
 #logo {
     font-family: 'Bebas Neue', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: rgb(255, 255, 255);
+    color: #FFFFFF;
     padding: 0 1rem;
     font-size: 300%;
     text-align: center;
@@ -38,15 +41,17 @@ header a {
 
 #navigation {
     list-style-type: none;
+    font-size: 120%;
+    
 }
 
 #navigation>li {
-    margin-bottom: 1rem;
-    display: inline-block;
+    border-bottom: 1em;
 }
 
 .active {
-    border-bottom: 1px;
+    border-bottom: 1px solid #FFFFFF;
+
 }
 
 main {
