@@ -21,6 +21,8 @@ body {
 header {
     background-color: #046997;
     width: 100%;
+    padding: 0 1em;
+    height:10%
 }
 
 header a {
@@ -33,9 +35,8 @@ header a {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #FFFFFF;
-    padding: 0 1rem;
-    font-size: 300%;
-    text-align: center;
+    padding-right: 1rem;
+    font-size: 250%;
 }
 
 
